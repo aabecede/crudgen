@@ -1,0 +1,62 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
+class DummyClass extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array<string, mixed>
+     */
+    public function rules()
+    {
+        return
+        [
+            DummyRulesRequest
+        ];
+    }
+
+    /**
+        if you need for json active this
+     */
+    protected function failedValidation(Validator $validator)
+    {
+
+        $code = 400;
+        $warning = $validator->errors()->all() ?? null;
+        $message = $this->parsingAlert($warning);
+        $response = [
+            'code' => $code,
+            'message' => $message
+        ];
+        $response = response()->json($response, $code);
+        throw new HttpResponseException($response);
+    }
+
+    public function parsingAlert($message)
+    {
+        $string = '';
+        if (is_array($message)) {
+            foreach ($message as $key => $value) {
+                $string .= ucfirst($value) . '<br>';
+            }
+        } else {
+            $string = ucfirst($message);
+        }
+        return $string;
+    }
+}

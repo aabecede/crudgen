@@ -1,0 +1,13 @@
+{
+    "name": "aabecede/crudgenlara",
+    "description": "CRUD LARAVEL json response",
+    "type": "plugins",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "aabecede",
+            "email": "aabdul.jabbar1301@gmail.com"
+        }
+    ],
+    "require": {}
+}
