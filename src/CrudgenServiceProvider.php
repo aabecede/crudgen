@@ -1,15 +1,15 @@
 <?php
 
-namespace Mrdebug\Crudgen;
+namespace Aabecede\Crudgen;
 
 use Illuminate\Support\ServiceProvider;
-use Mrdebug\Crudgen\Console\MakeApiCrud;
-use Mrdebug\Crudgen\Console\MakeCommentable;
-use Mrdebug\Crudgen\Console\MakeCrud;
-use Mrdebug\Crudgen\Console\MakeViews;
-use Mrdebug\Crudgen\Console\RemoveApiCrud;
-use Mrdebug\Crudgen\Console\RemoveCommentable;
-use Mrdebug\Crudgen\Console\RemoveCrud;
+use Aabecede\Crudgen\Console\MakeApiCrud;
+use Aabecede\Crudgen\Console\MakeCommentable;
+use Aabecede\Crudgen\Console\MakeCrud;
+use Aabecede\Crudgen\Console\MakeViews;
+use Aabecede\Crudgen\Console\RemoveApiCrud;
+use Aabecede\Crudgen\Console\RemoveCommentable;
+use Aabecede\Crudgen\Console\RemoveCrud;
 
 class CrudgenServiceProvider extends ServiceProvider
 {

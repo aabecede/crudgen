@@ -1,14 +1,14 @@
 <?php
 
-namespace Mrdebug\Crudgen\Services\Commentable;
+namespace Aabecede\Crudgen\Services\Commentable;
 
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Console\Concerns\InteractsWithIO;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Illuminate\Contracts\Foundation\Application;
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\PathsAndNamespacesService;
+use Aabecede\Crudgen\Services\MakeGlobalService;
+use Aabecede\Crudgen\Services\PathsAndNamespacesService;
 
 class MakeCommentableControllerService
 {

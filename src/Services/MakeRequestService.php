@@ -1,6 +1,6 @@
 <?php
 
-namespace Mrdebug\Crudgen\Services;
+namespace Aabecede\Crudgen\Services;
 
 use Illuminate\Console\Concerns\InteractsWithIO;
 use Illuminate\Support\Facades\File;

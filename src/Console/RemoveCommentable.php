@@ -1,11 +1,11 @@
 <?php
 
-namespace Mrdebug\Crudgen\Console;
+namespace Aabecede\Crudgen\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\RemoveCommentableService;
+use Aabecede\Crudgen\Services\MakeGlobalService;
+use Aabecede\Crudgen\Services\RemoveCommentableService;
 
 class RemoveCommentable extends Command
 {

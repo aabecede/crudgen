@@ -1,11 +1,11 @@
 <?php
 
-namespace Mrdebug\Crudgen\Services\Api;
+namespace Aabecede\Crudgen\Services\Api;
 
 use Illuminate\Console\Concerns\InteractsWithIO;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Illuminate\Contracts\Foundation\Application;
-use Mrdebug\Crudgen\Services\PathsAndNamespacesService;
+use Aabecede\Crudgen\Services\PathsAndNamespacesService;
 
 class RemoveApiCrudService
 {

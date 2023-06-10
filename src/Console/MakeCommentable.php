@@ -1,19 +1,19 @@
 <?php
 
-namespace Mrdebug\Crudgen\Console;
+namespace Aabecede\Crudgen\Console;
 
 use Illuminate\Console\Command;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Mrdebug\Crudgen\Exceptions\ConsoleException;
-use Mrdebug\Crudgen\Services\Commentable\EditCommentableView;
-use Mrdebug\Crudgen\Services\Commentable\MakeCommentableRequestService;
-use Mrdebug\Crudgen\Services\Commentable\MakeCommentableControllerService;
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\MakeMigrationService;
-use Mrdebug\Crudgen\Services\MakeModelService;
-use Mrdebug\Crudgen\Services\PathsAndNamespacesService;
+use Aabecede\Crudgen\Exceptions\ConsoleException;
+use Aabecede\Crudgen\Services\Commentable\EditCommentableView;
+use Aabecede\Crudgen\Services\Commentable\MakeCommentableRequestService;
+use Aabecede\Crudgen\Services\Commentable\MakeCommentableControllerService;
+use Aabecede\Crudgen\Services\MakeGlobalService;
+use Aabecede\Crudgen\Services\MakeMigrationService;
+use Aabecede\Crudgen\Services\MakeModelService;
+use Aabecede\Crudgen\Services\PathsAndNamespacesService;
 
 class MakeCommentable extends Command
 {

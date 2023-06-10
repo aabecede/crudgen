@@ -1,0 +1,81 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "091fc750c6ed0a63ad1b28f695808bca",
+    "packages": [
+        {
+            "name": "mrdebug/crudgen",
+            "version": "1.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/misterdebug/crud-generator-laravel.git",
+                "reference": "6bf8acc7acd22aa758ea01cf2688e783c862e1c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/misterdebug/crud-generator-laravel/zipball/6bf8acc7acd22aa758ea01cf2688e783c862e1c2",
+                "reference": "6bf8acc7acd22aa758ea01cf2688e783c862e1c2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Aabecede\\Crudgen\\CrudgenServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aabecede\\Crudgen\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Escarem",
+                    "email": "contact@escarem-jonathan.fr"
+                }
+            ],
+            "description": "Create a Laravel Crud in a few seconds",
+            "keywords": [
+                "composer-package",
+                "crud",
+                "crud-generator",
+                "generator",
+                "laravel",
+                "laravel-crud",
+                "laravel-crud-generator",
+                "laravel-package",
+                "laravel10",
+                "laravel8",
+                "laravel9",
+                "rest",
+                "rest-api"
+            ],
+            "support": {
+                "issues": "https://github.com/misterdebug/crud-generator-laravel/issues",
+                "source": "https://github.com/misterdebug/crud-generator-laravel/tree/1.10.2"
+            },
+            "time": "2023-05-20T03:04:15+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

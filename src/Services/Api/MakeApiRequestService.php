@@ -1,11 +1,11 @@
 <?php
 
-namespace Mrdebug\Crudgen\Services\Api;
+namespace Aabecede\Crudgen\Services\Api;
 
 use Illuminate\Console\Concerns\InteractsWithIO;
 use Illuminate\Support\Facades\File;
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\PathsAndNamespacesService;
+use Aabecede\Crudgen\Services\MakeGlobalService;
+use Aabecede\Crudgen\Services\PathsAndNamespacesService;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
 class MakeApiRequestService

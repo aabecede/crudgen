@@ -1,13 +1,13 @@
 <?php
 
-namespace Mrdebug\Crudgen\Console;
+namespace Aabecede\Crudgen\Console;
 
 use Illuminate\Console\Command;
 
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\MakeViewsService;
+use Aabecede\Crudgen\Services\MakeGlobalService;
+use Aabecede\Crudgen\Services\MakeViewsService;
 use Illuminate\Support\Facades\File;
-use Mrdebug\Crudgen\Services\PathsAndNamespacesService;
+use Aabecede\Crudgen\Services\PathsAndNamespacesService;
 
 class MakeViews extends Command
 {
@@ -54,7 +54,7 @@ class MakeViews extends Command
         if(!File::isDirectory($this->pathsAndNamespacesService->getCrudgenViewsStubCustom($templateViewsDirectory)))
         {
             if($templateViewsDirectory=='default-theme')
-                $this->error("Publish the default theme with: php artisan vendor:publish --provider=\"Mrdebug\Crudgen\CrudgenServiceProvider\" or create your own default-theme directory here: ".$this->pathsAndNamespacesService->getCrudgenViewsStub());
+                $this->error("Publish the default theme with: php artisan vendor:publish --provider=\"Aabecede\Crudgen\CrudgenServiceProvider\" or create your own default-theme directory here: ".$this->pathsAndNamespacesService->getCrudgenViewsStub());
             else
                 $this->error("Do you have created a directory called ".$templateViewsDirectory." here: ".$this->pathsAndNamespacesService->getCrudgenViewsStub().'?');
             return;

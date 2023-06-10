@@ -1,17 +1,17 @@
 <?php
 
-namespace Mrdebug\Crudgen\Console;
+namespace Aabecede\Crudgen\Console;
 
 use Illuminate\Console\Command;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Mrdebug\Crudgen\Services\MakeControllerService;
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\MakeMigrationService;
-use Mrdebug\Crudgen\Services\MakeModelService;
-use Mrdebug\Crudgen\Services\MakeRequestService;
-use Mrdebug\Crudgen\Services\PathsAndNamespacesService;
+use Aabecede\Crudgen\Services\MakeControllerService;
+use Aabecede\Crudgen\Services\MakeGlobalService;
+use Aabecede\Crudgen\Services\MakeMigrationService;
+use Aabecede\Crudgen\Services\MakeModelService;
+use Aabecede\Crudgen\Services\MakeRequestService;
+use Aabecede\Crudgen\Services\PathsAndNamespacesService;
 
 class MakeCrud extends Command
 {
